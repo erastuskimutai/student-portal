@@ -1,5 +1,4 @@
-/* Q4(a): Background colours, fonts, text formatting */
-* { box-sizing: border-box; }
+{ box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -21,7 +20,6 @@ header h2 { margin: 4px 0 0; font-weight: normal; font-size: 1.15rem; color: #cf
 
 h2 { color: #14365d; }
 
-/* Q4(b): Horizontal navigation with hover effect */
 nav { background-color: #0d2542; }
 nav ul {
   list-style: none;
@@ -42,7 +40,7 @@ nav a:hover {
   color: #0d2542;
 }
 
-/* Q4(d): Flexbox layout */
+/*Flexbox layout */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +58,7 @@ nav a:hover {
 }
 .container .full { flex-basis: 100%; }
 
-/* Q4(c): Table styling */
+/*Table styling */
 .table-wrap { overflow-x: auto; }
 table {
   width: 100%;
