@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Student Information Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Q1(c): Header -->
+  <header>
+    <h1>Great Lakes University</h1>
+    <h2>Student Information Portal</h2>
+  </header>
+
+  <!-- Q1(d): Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#registration">Student Registration</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <section id="home" class="full">
+      <h2>Welcome</h2>
+      <p>Register, view student records and manage your academic information in one place.</p>
+    </section>
+
+    <!-- Q2(a): About -->
+    <section id="about" class="card">
+      <h2>About the Portal</h2>
+      <p>
+        The Student Information Portal helps students register online, lets staff view
+        student records, and keeps academic information accurate and easy to access.
+      </p>
+
+      <!-- Q2(b): Unordered list -->
+      <h3>Programmes Offered</h3>
+      <ul>
+        <li>Bachelor of Science in Computer Science</li>
+        <li>Bachelor of Business Administration</li>
+        <li>Bachelor of Education</li>
+        <li>Bachelor of Engineering</li>
+      </ul>
+    </section>
+
+    <!-- Q2(c): Table -->
+    <section id="students" class="card">
+      <h2>Student Information</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Student Name</th>
+              <th>Registration Number</th>
+              <th>Programme</th>
+              <th>Year of Study</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>S001</td>
+              <td>Amina Hassan</td>
+              <td>CS/2024/001</td>
+              <td>Computer Science</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>S002</td>
+              <td>John Mwangi</td>
+              <td>BA/2023/045</td>
+              <td>Business Administration</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>S003</td>
+              <td>Grace Otieno</td>
+              <td>ED/2025/012</td>
+              <td>Education</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Q3: Registration form -->
+    <section id="registration" class="card full">
+      <h2>Student Registration</h2>
+      <form id="registrationForm" novalidate>
+
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="e.g. Amina Hassan">
+        <span class="error" id="nameError"></span>
+
+        <label for="regNo">Registration Number</label>
+        <input type="text" id="regNo" name="regNo" placeholder="e.g. CS/2024/001">
+        <span class="error" id="regError"></span>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com">
+        <span class="error" id="emailError"></span>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <label class="inline"><input type="radio" name="gender" value="Male"> Male</label>
+          <label class="inline"><input type="radio" name="gender" value="Female"> Female</label>
+          <label class="inline"><input type="radio" name="gender" value="Other"> Other</label>
+        </fieldset>
+
+        <label for="programme">Academic Programme</label>
+        <select id="programme" name="programme">
+          <option value="Computer Science">Computer Science</option>
+          <option value="Business Administration">Business Administration</option>
+          <option value="Education">Education</option>
+          <option value="Engineering">Engineering</option>
+        </select>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset" id="resetBtn">Reset</button>
+        </div>
+      </form>
+
+      <!-- Q6: output area -->
+      <div id="output" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: registrar@greatlakes.ac.ke | Phone: +254 700 000 000</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
